@@ -17,7 +17,7 @@ dp = Dispatcher()
 # Обработчик сообщений
 @dp.message()
 async def echo_handler(message: types.Message):
-    await message.answer("Привет, я ФрилансЯ. Скоро начну присылать тебе заказы!")
+    await message.answer("Привет, я ФрилансЯ. Скоро начну присылать тебе заказы!😊", parse_mode="HTML")
 
 # Webhook-хуки
 async def on_startup(bot: Bot):
